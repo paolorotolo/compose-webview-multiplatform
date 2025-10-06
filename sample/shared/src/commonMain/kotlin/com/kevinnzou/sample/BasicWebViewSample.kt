@@ -109,26 +109,26 @@ internal fun BasicWebViewSample() {
                 )
             }
 
-            LaunchedEffect(state.loadingState) {
-                if (state.loadingState is LoadingState.Finished) {
-                    state.cookieManager.setCookie(
-                        "https://github.com",
-                        Cookie(
-                            name = "test",
-                            value = "value",
-                            domain = "github.com",
-                            expiresDate = 1896863778
-                        )
-                    )
-                    Logger.i {
-                        "cookie: ${state.cookieManager.getCookies("https://github.com")}"
-                    }
-                    state.cookieManager.removeAllCookies()
-                    Logger.i {
-                        "cookie: ${state.cookieManager.getCookies("https://github.com")}"
-                    }
-                }
-            }
+            // LaunchedEffect(state.loadingState) {
+            //     if (state.loadingState is LoadingState.Finished) {
+            //         state.cookieManager.setCookie(
+            //             "https://github.com",
+            //             Cookie(
+            //                 name = "test",
+            //                 value = "value",
+            //                 domain = "github.com",
+            //                 expiresDate = 1896863778
+            //             )
+            //         )
+            //         Logger.i {
+            //             "cookie: ${state.cookieManager.getCookies("https://github.com")}"
+            //         }
+            //         state.cookieManager.removeAllCookies()
+            //         Logger.i {
+            //             "cookie: ${state.cookieManager.getCookies("https://github.com")}"
+            //         }
+            //     }
+            // }
 
             WebView(
                 state = state,

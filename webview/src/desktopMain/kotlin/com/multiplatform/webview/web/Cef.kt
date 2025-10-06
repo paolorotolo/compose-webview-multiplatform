@@ -297,7 +297,7 @@ data object Cef {
                     this.locales_dir_path = _settings.localesDirPath
                     this.log_file = _settings.logFile
                     this.log_severity = _settings.logSeverity.toJCefSeverity()
-                    this.pack_loading_disabled = _settings.packLoadingDisabled
+                    // this.pack_loading_disabled = _settings.packLoadingDisabled
                     this.persist_session_cookies = _settings.persistSessionCookies
                     this.remote_debugging_port = _settings.remoteDebuggingPort
                     this.resources_dir_path = _settings.resourcesDirPath

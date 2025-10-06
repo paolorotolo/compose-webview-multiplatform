@@ -62,7 +62,7 @@ kotlin {
         val desktopMain by getting {
             dependencies {
                 implementation(compose.desktop.common)
-                implementation("me.friwi:jcefmaven:110.0.25.1")
+                implementation("me.friwi:jcefmaven:135.0.20")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.7.2")
             }
         }

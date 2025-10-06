@@ -26,6 +26,10 @@ internal fun CefBrowser.addDisplayHandler(state: WebViewState) {
             state.pageTitle = title
         }
 
+        override fun onFullscreenModeChange(browser: CefBrowser?, fullscreen: Boolean) {
+
+        }
+
         override fun onTooltip(browser: CefBrowser?, text: String?): Boolean {
             return false
         }
